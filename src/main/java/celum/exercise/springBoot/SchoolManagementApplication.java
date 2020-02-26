@@ -13,10 +13,10 @@ import celum.exercise.springBoot.repository.StudentRepository;
 public class SchoolManagementApplication implements CommandLineRunner{
 	
 	@Autowired
-	private CourseRepository courseRepository;
+	public CourseRepository courseRepository;
 	
 	@Autowired
-	private StudentRepository studentRepository;
+	public StudentRepository studentRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SchoolManagementApplication.class, args);

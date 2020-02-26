@@ -1,9 +1,7 @@
 package celum.exercise.springBoot.restController;
 
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.Optional;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,16 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import celum.exercise.springBoot.model.Courses;
 import celum.exercise.springBoot.model.Students;
-import celum.exercise.springBoot.repository.CourseRepository;
 import celum.exercise.springBoot.repository.StudentRepository;
 
 @RestController
 public class StudentRestController {
 
 	private StudentRepository studentRepository;
-	private CourseRepository courseRepository;
 
 	public StudentRestController(StudentRepository studentRepository) {
 		this.studentRepository = studentRepository;
