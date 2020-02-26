@@ -74,7 +74,7 @@ public class Students implements Serializable {
 	 *
 	 */
 	@PreRemove
-	private void removeStudentFromCourses() {
+	public void removeStudentFromCourses() {
 	    for (Courses c : courses) {
 	        c.getStudents().remove(this);
 	    }
